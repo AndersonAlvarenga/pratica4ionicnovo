@@ -1,0 +1,22 @@
+<ion-header>
+</ion-header>
+<ion-content>
+  <ion-footer-bar>
+    <form padding #formpost="ngForm" class="card">
+      <ion-card class="formLogin">
+        <ion-item>
+          <ion-label position="stacked">Descricao</ion-label>
+          <ion-input [(ngModel)]="sintomaForm.descricao" type="text" name="descricao"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Intensidade</ion-label>
+          <ion-input [(ngModel)]="sintomaForm.intensidade" type="password" name="intensidade"></ion-input>
+        </ion-item>
+        
+        <ion-section class="button">
+          <ion-button color="danger" (click)="salvar()">Entrar</ion-button>
+        </ion-section>
+      </ion-card>
+    </form>
+  </ion-footer-bar>
+</ion-content>
